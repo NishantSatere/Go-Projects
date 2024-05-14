@@ -21,6 +21,7 @@ func init() {
 }
 
 // Functions to commincate with the database and used in the controller
+// Also called ORM functions
 func (b *Book) CreateBook() *Book {
 	DB.NewRecord(b)
 	DB.Create(&b)
